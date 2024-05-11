@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #E5E5E5;
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: Inter, serif;
+}
+
+header {
+    height: 112px;
+    background-color: #FFFFFF;
+    padding: 41px 96px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    color: #426B1F;
+    font-family: "Newsreader", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 32px;
+    justify-self: flex-start;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+header nav ul {
+    display: flex;
+    align-items: baseline;
+
+}
+
+header nav ul li {
+    list-style-type: none;
+}
+
+header nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    padding: 0 20px;
+    font-weight: 400;
+    flex: 1;
+}
+
+.btn {
+    background-color: #426B1F;
+    padding: 15px;
+    text-align: center;
+    font-weight: 700;
+    color: #FFFFFF;
+    border-radius: 10px;
+
+}
+
+header nav ul li:last-child a {
+
+    margin-left: 10px;
+    flex: 2;
+}
+
+
+section, main {
+    background-color: #FFFFFF;
+    min-height: 500px;
+    padding: 20px;
+}
+
+h2 {
+    font-family: Newsreader, serif;
+    font-size: 64px;
+    letter-spacing: -2px;
+    text-align: center;
+    width: 75%;
+    margin: 120px auto;
+}
+
+h2 em {
+    font-style: italic;
+}
+
+.greeting .btn {
+    display: block;
+    height: 60px;
+    width: 220px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+.pictures {
+    display: flex;
+    align-items: center;
+    height: 1000px;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.pictures figure {
+    flex: 1;
+}
+
+.pictures figure figcaption {
+    font-family: Inter sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.pictures figure figcaption strong {
+    font-weight: 500;
+}
+
+
+footer {
+    height: 600px;
+    background-color: #FFFFFF;
+
+}
+
+footer dl {
+
+    font-size: 20px;
+    width: 90%;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+footer dl dt {
+    font-size: 14px;
+    font-weight: 700;
+    transform: translateY(120%);
+}
+
+footer dl dd {
+    margin-left: 20%;
+}
+
+@media only screen and (max-width: 1268px) {
+
+
+    header {
+        flex-direction: column;
+        height: 300px;
+        position: static;
+    }
+
+    header h1 {
+        text-align: center;
+        align-self: center;
+    }
+
+    .greeting h2 {
+        font-size: 48px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-self: center;
+    }
+
+    header nav ul li {
+        margin: 0 auto;
+    }
+
+    header nav ul li a {
+        display: block;
+        padding: 10px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+
+    .pictures {
+        flex-direction: column;
+        height: 2000px;
+
+    }
+
+    .pictures img {
+        width: 100%;
+    }
+
+    footer {
+        text-overflow: ellipsis;
+    }
+
+    footer dl dt {
+        transform: none;
+    }
+
+    footer dl dd {
+        max-height: 500px;
+        overflow: scroll;
+
+    }
+}
