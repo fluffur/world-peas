@@ -45,7 +45,7 @@ body {
 }
 
 .header__nav {
-    width: 600px;
+    max-width: 600px;
     padding-top: 12px;
 }
 
@@ -84,4 +84,21 @@ body {
     height: 48px;
     font-family: "Inter", sans-serif;
     font-weight: 600;
+}
+
+/* Media */
+@media screen and (max-width: 780px) {
+    .header__content {
+        flex-direction: column;
+    }
+
+    .header__title {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .header__nav-list {
+        flex-direction: column;
+
+    }
 }
