@@ -87,6 +87,42 @@ body {
     font-weight: 600;
 }
 
+/* About */
+.about {
+    padding-top: 168px;
+}
+
+.about__title {
+    font-size: 64px;
+    text-align: center;
+    font-family: "Newsreader", serif;
+    font-weight: 400;
+    width: 1020px;
+    margin: 0 auto 20px;
+    letter-spacing: -1.28px;
+    padding-left: 14px;
+    line-height: 76.8px;
+}
+
+
+
+.about__button {
+    display: block;
+    width: 227px;
+    margin: 0 auto;
+    color: var(--background-color);
+    text-decoration: none;
+    background-color: var(--brand-color);
+    border-radius: 8px;
+    line-height: 64px;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+}
+
+
+
 /* Media */
 @media screen and (max-width: 780px) {
     .header__content {
