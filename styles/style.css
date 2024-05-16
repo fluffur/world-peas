@@ -15,14 +15,33 @@ body {
 /* Global Properties */
 :root {
     --brand-color: #426B1F;
-    --text-color: #000;
-    --background-color: #FFF;
+    --brand-color-darker: #2e4f12;
+    --primary-color: #000;
+    --secondary-color: #FFF;
 }
 
 /* Container for all sections */
 .container {
     padding: 0 96px;
 
+}
+
+
+.btn, .btn:hover {
+    transition: 0.4s;
+}
+
+.btn {
+    background-color: var(--brand-color);
+    color: var(--secondary-color);
+    display: block;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    border-radius: 8px;
+} 
+
+.btn:hover {
+    background-color: var(--brand-color-darker);
 }
 
 .header, section, .footer {
@@ -75,18 +94,16 @@ body {
     display: block;
     letter-spacing: 0.5px;
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--primary-color);
     font-size: 16px;
     font-family: "Inter", sans-serif;
 }
 
 .header__nav-button {
-    display: block;
-    color: var(--background-color);
+    /* display: block;
     text-decoration: none;
     letter-spacing: 0.5px;
-    background-color: var(--brand-color);
-    border-radius: 8px;
+    border-radius: 8px; */
     width: 126px;
     line-height: 48px;
     text-align: center;
@@ -117,9 +134,7 @@ body {
     display: block;
     max-width: 227px;
     margin: 0 auto;
-    color: var(--background-color);
     text-decoration: none;
-    background-color: var(--brand-color);
     border-radius: 8px;
     line-height: 64px;
     font-size: 20px;
@@ -163,7 +178,7 @@ body {
 
 /* Footer */
 .footer {
-    padding-top: 158px;
+    padding-top: 154px;
 }
 
 .footer-items {
