@@ -25,7 +25,7 @@ body {
 
 }
 
-.header, section {
+.header, section, .footer {
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -160,6 +160,40 @@ body {
     margin: 0;
 }
 
+
+/* Footer */
+.footer {
+    padding-top: 158px;
+}
+
+.footer-items {
+    display: flex;
+    gap: 75px;
+    align-items: baseline;
+    
+}
+
+.footer-title {
+    font-family: "Inter Semi Bold", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.56px;
+    font-size: 14px;
+    max-width: 181px;
+    margin-top: 0;
+
+}
+
+.footer-description {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    max-width: 822px;
+    letter-spacing: 0.4px;
+    margin-top: 0;
+    line-height: 32px;
+
+}
+
 /* Media */
 @media screen and (max-width: 1450px) {
     .images-list {
@@ -203,6 +237,10 @@ body {
     }
 
 
+
+    .footer-items {
+        flex-direction: column;
+    }
 
 }
 
